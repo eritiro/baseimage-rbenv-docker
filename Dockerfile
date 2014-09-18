@@ -1,5 +1,5 @@
 FROM phusion/baseimage:latest
-env DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND noninteractive
 
 # Install basic things
 RUN apt-get -qq update
