@@ -1,7 +1,7 @@
 FROM phusion/baseimage:latest
 ENV DEBIAN_FRONTEND noninteractive
 
-# Install basic things
+# Install basic stuff
 RUN apt-get -qq update
 RUN apt-get -qqy install build-essential libssl-dev libreadline-gplv2-dev \
   libxml2-dev libxslt1-dev libpq-dev git-core
