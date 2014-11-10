@@ -20,8 +20,8 @@ CMD ["/sbin/my_init"]
 
 ### Install Ruby (+ gems)
 ```
-RUN rbenv install 2.1.2 && rm -rf /tmp/*
-RUN rbenv global 2.1.2
+RUN rbenv install 2.1.4 && rm -rf /tmp/*
+RUN rbenv global 2.1.4
 RUN gem install bundler --no-ri --no-rdoc
 RUN rbenv rehash
 ```
