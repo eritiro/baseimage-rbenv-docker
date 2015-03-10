@@ -28,8 +28,8 @@ RUN bash -c 'cd /root/.rbenv/plugins/ruby-build && git pull'
 
 ##### Install Ruby (+ gems)
 ```
-RUN rbenv install 2.1.4 && rm -rf /tmp/*
-RUN rbenv global 2.1.4
+RUN rbenv install 2.2.1 && rm -rf /tmp/*
+RUN rbenv global 2.2.1
 RUN gem install bundler --no-ri --no-rdoc
 RUN rbenv rehash
 ```
