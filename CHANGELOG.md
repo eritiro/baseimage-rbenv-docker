@@ -16,3 +16,9 @@
 *Dec 8 2014*
 
 - Update rbenv and ruby-build so they include latest definitions
+
+### 0.4
+*Mar 10 2015*
+
+- Add new packages to build environment (as suggested by rbenv)
+- Update rbenv and ruby-build definitions
