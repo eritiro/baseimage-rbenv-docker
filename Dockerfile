@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install basic stuff
 RUN apt-get -qq update
 RUN apt-get -qqy upgrade
-RUN apt-get -y install autoconf bison build-essential git-core libffi-dev \
+RUN apt-get -qqy install autoconf bison build-essential git-core libffi-dev \
   libgdbm-dev libgdbm3 libncurses5-dev libpq-dev libreadline6-dev \
   libssl-dev libxml2-dev libxslt1-dev libyaml-dev zlib1g-dev
 
