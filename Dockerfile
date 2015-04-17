@@ -16,3 +16,9 @@ ENV PATH /root/.rbenv/bin:/root/.rbenv/shims:$PATH
 # Clean up
 RUN apt-get autoremove -y && apt-get clean
 RUN rm -rf /tmp/*
+
+# Add specific versions
+RUN rbenv install 2.2.2 && rm -rf /tmp/*
+RUN rbenv global 2.2.2
+RUN gem install bundler --no-ri --no-rdoc
+RUN rbenv rehash
